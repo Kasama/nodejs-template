@@ -3,11 +3,16 @@
 <html>
   <head>
     <title>Batata</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="/index.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
-    <form action="/fact" method="POST">
-      <input type="number" name="n" value='0'/>
+    <form id="formo" action="/fact" method="POST">
+      <input id="number" type="number" name="n" value='0'/>
       <input type="submit" />
     </form>
+    <p>Valor é <span id="valor">0</span></p>
   </body>
 </html>
